@@ -1,0 +1,26 @@
+[project]
+name = "robodoggo"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = [
+                'tensorboard',
+                'protobuf==4.25.3', #tensorboard compatibility
+                'xlsxwriter',
+                'wandb',
+                'tqdm',
+                "torch==2.4.1+cu121",
+                'torchvision==0.19.1+cu121',
+                "numpy==1.24.1",
+                "pandas==2.0.3",
+                "scipy==1.10.1",
+                "matplotlib==3.7.5",
+                "fsspec<=2025.3.0",  # fsspec==2025.3.1 has bug with python 3.8
+                "isaacgym==1.0rc4",
+                "empy==3.3.4",
+                "catkin_pkg",
+                "lark"
+]
+
+
+[tool.setuptools]
+packages = ['resources', 'legged_gym']
